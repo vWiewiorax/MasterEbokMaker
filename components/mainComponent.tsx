@@ -308,10 +308,10 @@ export default function BlogEditorPage() {
                 <div className="absolute inset-0 bg-gradient-to-t " />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="inline-flex items-center gap-2 text-black/60 text-sm"><Tag className="w-4 h-4" />{category}</span>
-                    <span className="inline-flex items-center gap-2 text-black/60 text-sm"><Calendar className="w-4 h-4" />{new Date().toLocaleDateString("pl-PL", { day: "numeric", month: "long", year: "numeric" })}</span>
+                    <span className="inline-flex items-center gap-2 text-white text-sm"><Tag className="w-4 h-4 " />{category}</span>
+                    <span className="inline-flex items-center gap-2 text-white text-sm"><Calendar className="w-4 h-4" />{new Date().toLocaleDateString("pl-PL", { day: "numeric", month: "long", year: "numeric" })}</span>
                   </div>
-                  <h1 className="font-serif text-2xl md:text-3xl text-black leading-tight">{title || "Tytuł wpisu pojawi się tutaj..."}</h1>
+                  <h1 className="font-serif text-2xl md:text-3xl text-white leading-tight">{title || "Tytuł wpisu pojawi się tutaj..."}</h1>
                 </div>
               </div>
 
