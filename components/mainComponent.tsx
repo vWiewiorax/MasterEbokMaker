@@ -140,7 +140,7 @@ export default function BlogEditorPage() {
         }, { merge: true })
       } else {
         const uid =crypto.randomUUID() 
-        await addDoc(collection(db, "blogs",uid), {
+        await addDoc(collection(db, "blogs"), {
           id:uid ,
           title, slug, category, excerpt: excerpt || title,
           mainImage, htmlContent,
