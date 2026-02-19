@@ -139,8 +139,9 @@ export default function BlogEditorPage() {
           published: true,
         }, { merge: true })
       } else {
-        await addDoc(collection(db, "blogs"), {
-          id: crypto.randomUUID(),
+        const uid =crypto.randomUUID() 
+        await addDoc(collection(db, "blogs",uid), {
+          id:uid ,
           title, slug, category, excerpt: excerpt || title,
           mainImage, htmlContent,
           createdAt: serverTimestamp(),
